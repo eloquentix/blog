@@ -1,0 +1,17 @@
+{
+  "name": "eloquentix-blog",
+  "version": "1.0.0",
+  "description": "Eloquentix engineering blog — blog.eloquentix.com",
+  "private": true,
+  "scripts": {
+    "build": "eleventy",
+    "serve": "eleventy --serve",
+    "clean": "rm -rf _site"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.0.0",
+    "@11ty/eleventy-plugin-rss": "^2.0.2",
+    "luxon": "^3.4.4"
+  }
+}

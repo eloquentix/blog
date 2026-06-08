@@ -1,0 +1,15 @@
+---
+layout: base.njk
+title: Engineering Insights
+description: "Eloquentix engineering blog. AI engineering, agentic systems, architecture, and 25 years of pattern recognition — from the engineers at Eloquentix."
+---
+<h3>Engineering Insights.</h3>
+<p>What we've learned shipping production systems. AI, architecture, and 25 years of pattern recognition.</p>
+
+{% for post in collections.posts %}
+<article>
+  <h3><a href="{{ post.url }}">{{ post.data.title }}</a></h3>
+  <p class="post-meta">{{ post.date | readableDate }}</p>
+  {% if post.data.description %}<p>{{ post.data.description }}</p>{% endif %}
+</article>
+{% endfor %}

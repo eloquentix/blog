@@ -1,0 +1,33 @@
+---
+layout: base.njk
+---
+<article>
+  <h3>{{ title }}</h3>
+  <p class="post-meta">Eloquentix{% if author %} · {{ author }}{% endif %} · {{ page.date | readableDate }}{% if readingTime %} · {{ readingTime }}{% endif %}</p>
+  <div class="post-body">
+    {{ content | safe }}
+  </div>
+</article>
+
+<p style="margin-top:2rem;"><a href="/">← All posts</a></p>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": {{ title | dump | safe }},
+  {% if description %}"description": {{ description | dump | safe }},{% endif %}
+  "url": "{{ page.url | absUrl }}",
+  "datePublished": "{{ page.date | isoDate }}",
+  "dateModified": "{{ page.date | isoDate }}",
+  "author": { "@type": "Organization", "name": "Eloquentix Inc." },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Eloquentix Inc.",
+    "url": "https://www.eloquentix.com/",
+    "logo": "https://www.eloquentix.com/public/logo.png"
+  },
+  "mainEntityOfPage": "{{ page.url | absUrl }}"{% if keywords %},
+  "keywords": {{ keywords | dump | safe }}{% endif %}
+}
+</script>

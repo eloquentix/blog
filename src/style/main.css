@@ -1,0 +1,208 @@
+@import url("./theme.css");
+
+html,
+body {
+  background-color: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-text);
+}
+
+body {
+  margin: 0;
+  padding: 3.75rem 3.125rem;
+  scroll-behavior: smooth;
+}
+
+h3 {
+  font-family: var(--font-text);
+  font-weight: 400;
+}
+
+h1,
+h2 {
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+a {
+  color: var(--color-text);
+}
+
+a:active,
+a:focus,
+a:hover {
+  opacity: 0.65;
+}
+
+p {
+  color: var(--color-dark-grey);
+  line-height: 1.75rem;
+}
+
+article,
+section {
+  margin-top: 2.5rem;
+}
+
+footer.initial-hidden {
+  display: none;
+  opacity: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+address .email {
+  color: var(--color-text);
+  display: block;
+  padding: 4px;
+  width: fit-content;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding-left: 0;
+  row-gap: 1rem;
+}
+
+ul li {
+  line-height: 1.5rem;
+  width: fit-content;
+}
+
+.link-home {
+  display: block;
+  margin: 0;
+  text-decoration: none;
+  user-select: none;
+  width: fit-content;
+}
+
+.page-quote {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  margin-top: 8px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: baseline;
+  row-gap: 0.4rem;
+  column-gap: 0;
+}
+
+.nav-link {
+  display: inline;
+  padding: 2px 0;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.nav-link:after {
+  content: " ·";
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  opacity: 0.35;
+}
+
+.nav-link:last-child:after {
+  content: "";
+  margin: 0;
+}
+
+.client-link {
+  text-decoration: none;
+}
+
+.nav-sep {
+  flex: 0 0 100%;
+  height: 0;
+  margin: 0.2rem 0;
+}
+
+.delimiter {
+  background-color: var(--color-light-grey);
+  border-color: transparent;
+  height: 0.125rem;
+  margin: 2rem 0 3.25rem;
+  min-width: 4.5rem;
+  width: 20%;
+}
+
+.contact-info {
+  margin-top: 1rem;
+}
+
+/* @mobile view */
+@media screen and (max-width: 480px) {
+  #logo {
+    width: 15rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  h1 {
+    font-size: 1.25rem;
+  }
+  h2,
+  .page-quote {
+    font-size: 1.15rem;
+  }
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+/* @tablet -> laptop */
+@media screen and (min-width: 480px) and (max-width: 992px) {
+  #logo {
+    width: 18rem;
+  }
+  p {
+    font-size: 0.875rem;
+  }
+  h1 {
+    font-size: 1.375rem;
+  }
+  h2,
+  .page-quote {
+    font-size: 1.25rem;
+  }
+  h3 {
+    font-size: 1.15rem;
+  }
+}
+
+@media screen and (min-width: 780px) {
+  body {
+    max-width: 660px;
+    margin: 0 auto;
+  }
+}
+
+/* @laptop -> desktop */
+@media screen and (min-width: 922px) {
+  #logo {
+    width: 20rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  h1 {
+    font-size: 1.96rem;
+  }
+  h2,
+  .page-quote {
+    font-size: 1.725rem;
+  }
+  h3 {
+    font-size: 1.375rem;
+  }
+}

@@ -1,0 +1,17 @@
+# Eloquentix Blog
+
+> Engineering blog of Eloquentix Inc., a software and AI engineering consultancy founded in 2002. Essays and field notes on AI engineering, agentic systems, architecture, and 25 years of building production software.
+
+The blog covers AI engineering in practice (agentic systems, AI-generated code review, prompt engineering, multi-model workflows), software architecture at scale (virtual power plants, real-time systems), and observations on how AI is changing how software gets built.
+
+## About Eloquentix
+Eloquentix is a software and AI engineering consultancy founded in 2002. 25 senior engineers. 82 clients across energy, fintech, SaaS, and media. Led by CEO Radu Rosu. Main site: https://www.eloquentix.com
+
+## Key Pages
+- Blog index: https://blog.eloquentix.com/
+- RSS feed: https://blog.eloquentix.com/feed.xml
+- Eloquent Lens (AI codebase audit): https://www.eloquentix.com/lens.html
+- Kardia (AI constitution): https://kardia.eloquentix.com
+
+## Contact
+start@eloquentix.com

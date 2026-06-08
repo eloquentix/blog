@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- GTM -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-NTGVZLFMK6"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag("js", new Date());
+    gtag("config", "G-NTGVZLFMK6");
+  </script>
+
+  <meta content="text/html; charset=utf-8" http-equiv="Content-Type"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width,height=device-height, initial-scale=1, shrink-to-fit=yes"/>
+  <meta name="color-scheme" content="light dark"/>
+
+  <title>{{ title }} | Eloquentix</title>
+  <meta name="title" content="{{ title }} | Eloquentix"/>
+  {% if description %}<meta name="description" content="{{ description }}"/>{% endif %}
+  {% if keywords %}<meta name="keywords" content="{{ keywords | join(', ') }}"/>{% endif %}
+  <link rel="canonical" href="{{ page.url | absUrl }}"/>
+
+  <meta property="og:type" content="{% if layout == 'post.njk' %}article{% else %}website{% endif %}"/>
+  <meta property="og:url" content="{{ page.url | absUrl }}"/>
+  <meta property="og:title" content="{{ title }}"/>
+  {% if description %}<meta property="og:description" content="{{ description }}"/>{% endif %}
+  <meta property="og:image" content="{{ '/public/cover.png' | absUrl }}"/>
+
+  <meta property="twitter:card" content="summary_large_image"/>
+  <meta property="twitter:url" content="{{ page.url | absUrl }}"/>
+  <meta property="twitter:title" content="{{ title }}"/>
+  {% if description %}<meta property="twitter:description" content="{{ description }}"/>{% endif %}
+  <meta property="twitter:image" content="{{ '/public/cover.png' | absUrl }}"/>
+
+  <link rel="alternate" type="application/rss+xml" title="Eloquentix Blog" href="{{ '/feed.xml' | absUrl }}"/>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,500;1,400;1,600&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;700&display=swap" rel="stylesheet"/>
+
+  <link rel="icon" type="image/png" href="/public/favicon.png" media="(prefers-color-scheme: light)"/>
+  <link rel="icon" type="image/png" href="/public/favicon_dark.png" media="(prefers-color-scheme: dark)"/>
+  <link rel="stylesheet" href="/style/main.css"/>
+
+  <style>
+    .post-meta {
+      font-family: 'Source Code Pro', monospace;
+      font-size: 0.72rem;
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      opacity: 0.45;
+      margin: 0.2rem 0 1.5rem;
+    }
+    article + article { margin-top: 1.6rem; }
+    .post-body { line-height: 1.65; }
+    .post-body p { margin: 0.9rem 0; }
+  </style>
+</head>
+<body>
+
+  <header id="header">
+    <a class="link-home" href="https://www.eloquentix.com/" title="Eloquentix Home">
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="/public/logo_dark.png"/>
+        <img alt="Eloquentix Logo" id="logo" src="/public/logo.png"/>
+      </picture>
+    </a>
+  </header>
+
+  <hr class="delimiter"/>
+
+  <main>
+    {{ content | safe }}
+  </main>
+
+  <hr class="delimiter"/>
+
+  <footer class="">
+    <nav class="nav-links">
+      <a class="nav-link" href="/">Blog</a>
+      <a class="nav-link" href="https://www.eloquentix.com/lens.html">Eloquent Lens</a>
+      <a class="nav-link" href="https://www.eloquentix.com/ai-code-review.html">AI Review</a>
+      <a class="nav-link" href="https://www.eloquentix.com/open-source.html">Code</a>
+      <span class="nav-sep"></span>
+      <a class="nav-link" href="https://www.eloquentix.com/services.html">Services</a>
+      <a class="nav-link" href="https://www.eloquentix.com/approach.html">How we work</a>
+      <a class="nav-link" href="https://www.eloquentix.com/our-work.html">Our Work</a>
+      <a class="nav-link" href="https://www.eloquentix.com/faq.html">FAQ</a>
+    </nav>
+    <address class="contact-info">
+      <a class="email" href="mailto:start@eloquentix.com">start@eloquentix.com</a>
+    </address>
+  </footer>
+
+</body>
+</html>
