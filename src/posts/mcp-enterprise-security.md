@@ -13,7 +13,7 @@ keywords: ["MCP security", "model context protocol enterprise", "AI security", "
       how to control it.
     </p>
 
-    <h3>Why MCP changes your security model</h3>
+    <h2>Why MCP changes your security model</h2>
 
     <p>
       A traditional AI deployment — a model that reads training data and generates responses —
@@ -40,7 +40,7 @@ keywords: ["MCP security", "model context protocol enterprise", "AI security", "
       making requests programmatically, at machine speed, following logic a human wouldn't.
     </p>
 
-    <h3>The top risks</h3>
+    <h2>The top risks</h2>
 
     <p><strong>Prompt injection (CVSS 8.5).</strong> Malicious content in a tool's response
     hijacks the agent's next action. An agent that reads from an email inbox, a database, or
@@ -66,7 +66,7 @@ keywords: ["MCP security", "model context protocol enterprise", "AI security", "
     Set up anomaly detection on access patterns. Know what "normal" looks like so you can
     spot deviation.</p>
 
-    <h3>A four-pillar security framework</h3>
+    <h2>A four-pillar security framework</h2>
 
     <p><strong>Pillar 1: Zero-trust architecture.</strong> Every AI system authenticates
     for each request. Not session-level — request-level. Verify AI identity before each
@@ -98,7 +98,7 @@ keywords: ["MCP security", "model context protocol enterprise", "AI security", "
     a security incident looks like before one happens, so your response is a plan
     execution rather than an improvisation.</p>
 
-    <h3>At Eloquentix</h3>
+    <h2>At Eloquentix</h2>
 
     <p>
       Security review is not a checklist item at the end of a project. Our senior engineers

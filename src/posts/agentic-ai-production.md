@@ -11,7 +11,7 @@ keywords: ["agentic AI production", "AI agents enterprise", "AI engineering", "a
       in production. Here is the honest accounting.
     </p>
 
-    <h3>The failure mode no one talks about</h3>
+    <h2>The failure mode no one talks about</h2>
 
     <p>
       Agents fail at the seams. The same seams that break every distributed system —
@@ -29,7 +29,7 @@ keywords: ["agentic AI production", "AI agents enterprise", "AI engineering", "a
       provided. These are not edge cases. They happen in the first week of production.
     </p>
 
-    <h3>What actually works</h3>
+    <h2>What actually works</h2>
 
     <p><strong>Structured outputs with validation.</strong> Every tool call result should be validated
     against a schema before the agent acts on it. Every agent output destined for a downstream system
@@ -57,7 +57,7 @@ keywords: ["agentic AI production", "AI agents enterprise", "AI engineering", "a
     Model updates silently break agentic behavior in ways that unit tests won't catch.
     Build your eval suite before your first production deploy.</p>
 
-    <h3>What doesn't work</h3>
+    <h2>What doesn't work</h2>
 
     <p><strong>Long single-agent chains.</strong> A chain of 15 steps where each step's output
     feeds the next is a compounding error machine. By step 10, a small hallucination at step 3
@@ -81,7 +81,7 @@ keywords: ["agentic AI production", "AI agents enterprise", "AI engineering", "a
     agentic AI features, get the security surface audited before you ship.
     <a href="https://www.eloquentix.com/lens.html">That's exactly what Eloquent Lens does →</a></p>
 
-    <h3>The honest summary</h3>
+    <h2>The honest summary</h2>
 
     <p>
       Agentic AI is not new magic. It's distributed systems with a probabilistic component

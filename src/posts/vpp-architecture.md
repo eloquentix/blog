@@ -18,7 +18,7 @@ keywords: ["virtual power plant software", "energy software architecture", "real
       watching what actually breaks and why.
     </p>
 
-    <h3>The problem is harder than it looks</h3>
+    <h2>The problem is harder than it looks</h2>
 
     <p>
       A Virtual Power Plant aggregates distributed energy resources — solar farms, wind turbines,
@@ -41,7 +41,7 @@ keywords: ["virtual power plant software", "energy software architecture", "real
       penalties and potential exclusion from the market. We've maintained this for twelve years.
     </p>
 
-    <h3>The architecture</h3>
+    <h2>The architecture</h2>
 
     <p>
       The VPP platform is built on Scala and Akka, backed by Lightbend's production stack.
@@ -65,7 +65,7 @@ keywords: ["virtual power plant software", "energy software architecture", "real
       logic composable rather than baked in.
     </p>
 
-    <h3>What failed</h3>
+    <h2>What failed</h2>
 
     <p>
       The failures worth talking about are the ones that were architecturally surprising —
@@ -95,7 +95,7 @@ keywords: ["virtual power plant software", "energy software architecture", "real
     baked into dispatch logic before the negotiation layer existed. Protocol handling
     should be the first thing you build, not a refinement.</p>
 
-    <h3>What we'd do differently</h3>
+    <h2>What we'd do differently</h2>
 
     <p>
       Build the observability layer before the first production asset. We knew we needed
@@ -114,7 +114,7 @@ keywords: ["virtual power plant software", "energy software architecture", "real
       regulatory requirements evolve.
     </p>
 
-    <h3>What it teaches</h3>
+    <h2>What it teaches</h2>
 
     <p>
       Real-time systems at scale are a discipline, not a trick. The right technology choices

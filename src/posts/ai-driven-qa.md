@@ -24,7 +24,7 @@ keywords: ["AI-driven QA", "AI test automation", "mobile app testing", "agentic 
       mobile app with a multi-path checkout flow. What we found is worth writing down.
     </p>
 
-    <h3>What we did</h3>
+    <h2>What we did</h2>
 
     <p>
       Instead of writing test code, we wrote scenario documents. Plain Markdown.
@@ -54,7 +54,7 @@ keywords: ["AI-driven QA", "AI test automation", "mobile app testing", "agentic 
       that was required on one path and correctly absent on the other two.
     </p>
 
-    <h3>What makes this different</h3>
+    <h2>What makes this different</h2>
 
     <div class="compare">
       <div class="compare-col">
@@ -81,7 +81,7 @@ keywords: ["AI-driven QA", "AI test automation", "mobile app testing", "agentic 
       </div>
     </div>
 
-    <h3>The adaptation problem</h3>
+    <h2>The adaptation problem</h2>
 
     <p>
       The most interesting thing we observed wasn't what went right — it was how
@@ -109,7 +109,7 @@ keywords: ["AI-driven QA", "AI test automation", "mobile app testing", "agentic 
       static test runner can't make.
     </p>
 
-    <h3>The report is the output</h3>
+    <h2>The report is the output</h2>
 
     <p>
       After each run, what you have is a Markdown document with:
@@ -132,7 +132,7 @@ keywords: ["AI-driven QA", "AI test automation", "mobile app testing", "agentic 
       We didn't expect it to produce better QA notes than most human testers do.
     </p>
 
-    <h3>What it doesn't replace</h3>
+    <h2>What it doesn't replace</h2>
 
     <p>
       Unit tests, component tests, contract tests, snapshot tests — these are fine as
@@ -147,7 +147,7 @@ keywords: ["AI-driven QA", "AI test automation", "mobile app testing", "agentic 
       Now there is.
     </p>
 
-    <h3>Where this is going</h3>
+    <h2>Where this is going</h2>
 
     <p>
       The scenario documents are the asset. Once you have them, you can run them

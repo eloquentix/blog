@@ -13,16 +13,12 @@ body {
   scroll-behavior: smooth;
 }
 
-h3 {
+h1, h2, h3 {
   font-family: var(--font-text);
-  font-weight: 400;
 }
-
-h1,
-h2 {
-  font-family: var(--font-heading);
-  font-weight: 600;
-}
+h1 { font-weight: 600; }
+h2 { font-weight: 500; }
+h3 { font-weight: 400; }
 
 a {
   color: var(--color-text);
@@ -151,10 +147,10 @@ ul li {
   }
   h2,
   .page-quote {
-    font-size: 1.15rem;
+    font-size: 1.1rem;
   }
   h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 }
 
@@ -167,14 +163,14 @@ ul li {
     font-size: 0.875rem;
   }
   h1 {
-    font-size: 1.375rem;
+    font-size: 1.45rem;
   }
   h2,
   .page-quote {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
   }
   h3 {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
   }
 }
 
@@ -196,13 +192,15 @@ ul li {
   }
 
   h1 {
-    font-size: 1.96rem;
+    font-size: 1.7rem;
   }
-  h2,
+  h2 {
+    font-size: 1.375rem;
+  }
   .page-quote {
-    font-size: 1.725rem;
+    font-size: 1.5rem;
   }
   h3 {
-    font-size: 1.375rem;
+    font-size: 1.15rem;
   }
 }

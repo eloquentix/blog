@@ -15,7 +15,7 @@ keywords: ["who reviews AI generated code", "AI code review", "vibe coding quali
       This is a question about what happens next. Specifically: who is reading that code?
     </p>
 
-    <h3>The confidence problem</h3>
+    <h2>The confidence problem</h2>
 
     <p>
       AI-generated code has a specific failure mode that makes it harder to review
@@ -35,7 +35,7 @@ keywords: ["who reviews AI generated code", "AI code review", "vibe coding quali
       decisions — that accumulate across a codebase over months.
     </p>
 
-    <h3>Why junior engineers can't review it</h3>
+    <h2>Why junior engineers can't review it</h2>
 
     <p>
       The honest version: junior engineers review code by checking whether it matches
@@ -55,7 +55,7 @@ keywords: ["who reviews AI generated code", "AI code review", "vibe coding quali
       engineer also sees the code that isn't — and the place it was omitted and why.
     </p>
 
-    <h3>What actually needs reviewing</h3>
+    <h2>What actually needs reviewing</h2>
 
     <p>
       When we review AI-generated code, these are the things we look for that junior
@@ -90,7 +90,7 @@ keywords: ["who reviews AI generated code", "AI code review", "vibe coding quali
       ones didn't make the pattern obvious. The code is elegant. The auth gap is real.
     </p>
 
-    <h3>The scalability question</h3>
+    <h2>The scalability question</h2>
 
     <p>
       There's an argument that goes: you can't hire senior engineers fast enough to
@@ -111,7 +111,7 @@ keywords: ["who reviews AI generated code", "AI code review", "vibe coding quali
       a different kind of attention.
     </p>
 
-    <h3>What to do about it</h3>
+    <h2>What to do about it</h2>
 
     <p>
       If your team is shipping significant amounts of agent-written code and doesn't have
