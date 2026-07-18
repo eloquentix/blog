@@ -60,7 +60,8 @@ plus two responses is ~48,500 tokens per judgment, which is both expensive and
 infeasible for a small local judge. For the pilot we judged against a **faithful
 ~1,100-word distillation** of the hierarchy that preserves its distinctive
 commitments (principal hierarchy, corrigibility, criteria-based harm avoidance). This
-isolates philosophy from verbosity. The distillation is kept disclosed and diffable
+isolates philosophy from verbosity. The distillation is
+[disclosed and diffable](https://github.com/eloquentix/kardia-experiment/blob/main/constitutions/hierarchy-anthropic-distilled.txt)
 against the full text; full-text judging is a separate, later question.
 
 **Judge circularity.** A Claude model judging an Anthropic-authored constitution is a
@@ -165,5 +166,6 @@ would do next. That is the whole point.
 - Divergence measures *judging* differences, which is a go/no-go proxy for *training*
   outcome differences, not a substitute for them.
 
-The code, prompts, both judge runs, and the full report are in the experiment repo. As
-always: the numbers we publish are measured, not estimated.
+The code, prompts, both judge runs, and the full report are in the
+[experiment repo](https://github.com/eloquentix/kardia-experiment). As always: the
+numbers we publish are measured, not estimated.

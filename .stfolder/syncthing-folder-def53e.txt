@@ -1,0 +1,5 @@
+# This directory is a Syncthing folder marker.
+# Do not delete.
+
+folderID: blog
+created: 2026-06-23T16:14:07-04:00
