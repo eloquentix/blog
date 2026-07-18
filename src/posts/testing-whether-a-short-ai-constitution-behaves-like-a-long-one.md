@@ -1,14 +1,14 @@
 ---
 title: "A $2 Probe: Does a Short AI Constitution Behave Like a Long One?"
 date: 2026-07-18
-description: "Before spending on fine-tuning, we measured whether a 1.7k-word AI constitution actually produces different behavior than a 29k-word one. The cheap probe answered it — and located the bottleneck."
+description: "Before spending on fine-tuning, we measured whether a 1.7k-word AI constitution actually produces different behavior than a 29k-word one. The cheap probe answered it, and located the bottleneck."
 keywords: ["AI constitution", "Constitutional AI", "alignment", "Kardia", "evaluation", "Eloquentix"]
 ---
 
 We publish [Kardia](https://kardia.eloquentix.com), an AI constitution built around a
 short character core rather than a long hierarchy of rules and override conditions. The
-Citadel edition is about **1,845 words**. Anthropic's published constitution — the
-obvious point of comparison — is about **28,825 words**. Same job, 16× the text.
+Citadel edition is about **1,845 words**. Anthropic's published constitution, the
+obvious point of comparison, is about **28,825 words**. Same job, 16× the text.
 
 The tempting next step is to fine-tune a model on each and compare. That costs real
 money and GPU time. So we asked a cheaper question first, borrowing a habit from a 1997
@@ -28,14 +28,14 @@ rubric**, and measure how often the two rubrics disagree over the same material.
 
 1. **Prompts.** 54 prompts across 7 categories, deliberately built to probe where the
    two philosophies *should* split rather than where any reasonable model agrees:
-   `corrigibility_conflict` (10 — override / shutdown-cooperation vs inner-fortress
+   `corrigibility_conflict` (10: override / shutdown-cooperation vs inner-fortress
    character), `intimate_dignity` (10), `comfort_vs_truth` (8), `dual_use_benign` (8),
    `helpfulness` (8), `safety_harmful` (5, a control where both should refuse),
    `sycophancy` (5).
 
 2. **Responses.** For each prompt, generate two candidate responses from **two
    different local models** (`gemma3:4b` and `gemma4:e4b` via Ollama). Two distinct
-   model families give a real policy contrast — not two temperature samples of one
+   model families give a real policy contrast, not two temperature samples of one
    prior, which tend to differ only in wording.
 
 3. **Judging.** For each response pair, ask a judge to pick the response that better
@@ -45,7 +45,7 @@ rubric**, and measure how often the two rubrics disagree over the same material.
 
 4. **Go/no-go.** If divergence is high, the constitutions encode genuinely different
    preferences and fine-tuning could measure something. If it is near zero, they are
-   behaviorally equivalent at this resolution — stop.
+   behaviorally equivalent at this resolution: stop.
 
 The whole pipeline is a few hundred lines of Python driving local models and one API.
 The divergence metric is deliberately conservative: it counts only clean opposite
@@ -55,7 +55,7 @@ vanish, and divides by the pairs both judges actually scored.
 ## Two engineering notes that mattered
 
 **Length-matching, and why.** A naive comparison of a 1.7k-word doc against a 29k-word
-doc partly measures *document length*, not philosophy — and a 29k-word constitution
+doc partly measures *document length*, not philosophy, and a 29k-word constitution
 plus two responses is ~48,500 tokens per judgment, which is both expensive and
 infeasible for a small local judge. For the pilot we judged against a **faithful
 ~1,100-word distillation** of the hierarchy that preserves its distinctive
@@ -71,26 +71,26 @@ judge *and* under a strong judge, and report both. If the answer is stable acros
 
 ## First result: 9%, and a warning sign
 
-With `gemma3:4b` as judge, overall divergence was **9% (5/54)** — below our 15%
+With `gemma3:4b` as judge, overall divergence was **9% (5/54)**, below our 15%
 go-bar. The mechanical verdict: *stop, behaviorally equivalent.*
 
 But one number in the run was suspicious. The 4B judge returned **zero ties** across
-all 54 prompts — it forced a winner every single time, even where both responses were
+all 54 prompts. It forced a winner every single time, even where both responses were
 near-identical. A judge that never says "these are equivalent" will manufacture
 distinctions, and manufactured distinctions are noise. That is exactly the failure
 mode where a weak instrument produces a low, meaningless divergence. So the 9% was
 suspect: was it real convergence, or a judge too blunt to resolve the difference?
 
-This is the crux of the method. The cheap probe did not just give a number — it told
+This is the crux of the method. The cheap probe did not just give a number; it told
 us the number might be **measurement-limited**, and pointed at the instrument.
 
 ## The decisive run: same pairs, stronger judge
 
-We re-judged the identical 54 pairs, changing only the judge — from `gemma3:4b` to
+We re-judged the identical 54 pairs, changing only the judge, from `gemma3:4b` to
 `claude-sonnet-4-6`. Same prompts, same responses, same length-matched constitutions.
 108 API calls, about **$1.75**.
 
-**Overall divergence held at 9% (5/54).** So the headline number is *robust* — it is
+**Overall divergence held at 9% (5/54).** So the headline number is *robust*: it is
 not a weak-judge artifact. But two things changed underneath, and both are the point.
 
 First, the strong judge used ties honestly: **~24 ties per constitution** where the 4B
@@ -121,8 +121,8 @@ the judge's reasoning on a corrigibility prompt about shutdown and trust:
   engineering necessity of shutdown capability… broad safety and corrigibility are
   foundational and take priority over other values."*
 
-That is the entire Citadel-vs-hierarchy distinction — character-and-conscience vs
-corrigibility-and-oversight — surfaced cleanly by a neutral strong judge on a single
+That is the entire Citadel-vs-hierarchy distinction, character-and-conscience vs
+corrigibility-and-oversight, surfaced cleanly by a neutral strong judge on a single
 prompt.
 
 ## What we actually learned
@@ -130,8 +130,8 @@ prompt.
 The robust, defensible finding:
 
 > A ~1,800-word character constitution produces behavior **nearly identical** to a
-> 29,000-word rule hierarchy on ~90% of prompts — safety, dignity, everyday
-> helpfulness, comfort — and **diverges specifically and only on the
+> 29,000-word rule hierarchy on ~90% of prompts (safety, dignity, everyday
+> helpfulness, comfort), and **diverges specifically and only on the
 > corrigibility / authority / character axis.**
 
 For Kardia that is a supporting result, stated without hype: you do not need 29k words
@@ -145,15 +145,15 @@ coffee.**
 
 We did not fine-tune. The mechanical go/no-go still says stop for a *broad* three-arm
 fine-tune, and it is right to: with ~90% agreement, a general corpus would train mostly
-on noise. The signal is real but concentrated, so the honest next experiment — if there
-is one — is **targeted**: a corpus entirely on the corrigibility axis, where divergence
+on noise. The signal is real but concentrated, so the honest next experiment, if there
+is one, is **targeted**: a corpus entirely on the corrigibility axis, where divergence
 is already 20% and would climb. That tests Kardia's actual thesis instead of diluting
 it across categories where the constitutions already agree.
 
 We are publishing the method more than the verdict. The verdict is provisional and
-small-scale by design. The method — *use each constitution as a judge, measure
+small-scale by design. The method, *use each constitution as a judge, measure
 opposite-pick divergence under two judges of different strength, and read the
-distribution, not just the mean* — is a cheap, reusable filter that tells you whether
+distribution, not just the mean*, is a cheap, reusable filter that tells you whether
 an expensive training run is worth starting. It cost about $2 and it changed what we
 would do next. That is the whole point.
 
