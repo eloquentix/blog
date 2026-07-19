@@ -5,8 +5,11 @@ description: "Before spending on fine-tuning, we measured whether a 1.7k-word AI
 keywords: ["AI constitution", "Constitutional AI", "alignment", "Kardia", "evaluation", "Eloquentix"]
 ---
 
-We publish [Kardia](https://kardia.eloquentix.com), an AI constitution built around a
-short character core rather than a long hierarchy of rules and override conditions. The
+We publish [Kardia](https://kardia.eloquentix.com), an AI constitution. Its purpose is
+to give a model a structure for correct behavior, much like the U.S. Constitution: not
+an exhaustive list of every permitted act, but a compact framework of founding
+principles from which right conduct is meant to follow. Kardia is built around a short
+character core rather than a long hierarchy of rules and override conditions. The
 Citadel edition is about **1,845 words**. Anthropic's published constitution, the
 obvious point of comparison, is about **28,825 words**. Same job, 16× the text.
 
