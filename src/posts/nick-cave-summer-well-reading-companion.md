@@ -1,0 +1,14 @@
+---
+title: "Leaning on the Crutch"
+date: 2026-08-15
+description: "We made a page for Nick Cave's set at Summer Well, 9 August 2026, because of one sentence: religion is a crutch, and a much-needed one."
+keywords: ["Nick Cave", "Summer Well 2026", "Domeniul Știrbey", "Bring Your Spirit Down", "religion is a crutch", "belief", "lyrics"]
+---
+
+And a much-needed one: it is the second half of the sentence that kept us up, the clause after the comma that refuses to let the first half stand as the sneer it has been for as long as anyone can remember, ever since calling religion a crutch became a way of ending an argument rather than starting one. Nick Cave said it recently, religion is a crutch, and a much-needed one, conceding everything the scoffers ever wanted and then asking them, without raising his voice, what exactly they think people do with a broken leg.
+
+That sentence is why we built [Bring Your Spirit Down](https://apps.eloquentix.com/cave/), a companion to his set at Summer Well on 9 August, at Domeniul Știrbey in Buftea, outside Bucharest. The idea was simple enough to sound obvious: in the noise of a Nick Cave concert the lyrics get lost, and buried in them are his understandings about life, belief most of all, so we set the whole concert down with the lyrics beside it, a way in marked "Enter the night," an argument to read first, and the set on a YouTube playlist for anyone who wants the sound back. Though it may be that the noise is the point, that there are things a crowd can only say to itself when nobody can quite make out the words, when a line about God goes by at volume and lands as a feeling before anyone has decided whether they agree with it.
+
+We also laid an AI synopsis on top, and we are not sure about it. It is a clean account of a night that was not clean, of a field where the sound thinned and came back and the people at the front were at a different concert from the people at the back, and a synopsis has to decide what happened when the reason anyone goes to hear Cave sing about belief is that nothing has been decided. Read it and you can feel the night smoothed under it like a bedsheet over a body, and also, against your will, that a stranger's paraphrase of your confusion sometimes tells you what the confusion was about.
+
+The old hymn had it as leaning, "what have I to dread, what have I to fear, leaning on the everlasting arms," as if the honest posture of a believer were a kind of lopsidedness, a debt carried under the arm that is never paid off and was never meant to be, and the page cannot settle whether the lyrics were lost in the noise or simply living there, or whether setting them in clean type gives the words back or puts them somewhere they never meant to go, while the sentence sits on the screen with the comma doing all the work and nobody, not the singer and not the crowd at Domeniul Știrbey, ready to say what they would do if somebody took the crutch away.
