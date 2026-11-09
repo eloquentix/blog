@@ -1,6 +1,6 @@
 ---
 title: "pdiag: Open Diagnostics for an Old Porsche"
-date: 2026-10-12
+date: 2026-11-08
 author: "Radu Rosu, Founder"
 description: "An open source diagnostic tool for K-line era water-cooled Porsches, built for a 2002 996 Targa. Updated November 2026: it now reads the real car, live, from a Mac with a $20 cable."
 keywords: ["Porsche 996", "Porsche Boxster 986", "K-line", "KWP2000", "OBD-II", "car diagnostics", "open source", "Bosch ME7.8", "Mac", "Python"]
